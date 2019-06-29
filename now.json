@@ -1,11 +1,11 @@
 {
     "version": 2,
     "builds": [{
-            "src": "./backend/src/index.js",
+            "src": "/backend/src/index.js",
             "use": "@now/node-server"
         },
         {
-            "src": "./frontend/src/index.js",
+            "src": "/frontend/src/index.js",
             "use": "@now/node-server"
         }
 
@@ -13,11 +13,11 @@
 
     "routes": [{
             "src": "/.*",
-            "dest": ".frontend/src/routes.js"
+            "dest": "frontend/src/routes.js"
         },
         {
             "src": "/.*",
-            "dest": ".backend/src/routes.js"
+            "dest": "backend/src/routes.js"
         }
 
     ]
